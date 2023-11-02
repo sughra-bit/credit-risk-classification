@@ -26,9 +26,9 @@ Used the supervised learning classification model (Logistic Regression) to predi
 
 The results
 
-Machine Learning Model 1:
+Model 1:
 
-Accuracy - how often the model is correct: the model displays 18679 true positive results and 558 true negative results.
+Accuracy - the model displays 18679 true positive results and 558 true negative results.
 
 Precision - the ratio of the correctly predicted true positives to the total predicted positive observations: the model performs better predicting healthy loans (precision 1) than high-risk loans (precision 0.87).
 
@@ -38,7 +38,7 @@ Support - the number of actual occurrences of the class in the specified dataset
 
 Machine Learning Model 2:
 
-Accuracy - how often the model is correct: the model displays 55945 true positive results and 55954 true negative results.
+Accuracy - the model displays 55945 true positive results and 55954 true negative results.
 
 Precision - the ratio of the correctly predicted true positives to the total predicted positive observations: the model performs equally well for predicting healthy loans (precision 0.99) and high-risk loans (precision 0.99).
 
@@ -48,13 +48,4 @@ Support - the number of actual occurrences of the class in the specified dataset
 
 
 Summary
-Overall, both models worked quite well with accuracy scores above 90%. However, Model 2 had a higher balanced accuracy score of 99.6% compared to 94.4% of Model 1. Thus, Model 2 is a better classifier of loan status.
-
-From our results it is clear that it is more difficult to accurately classify high-risk loans. However, from our domain knowledge, we know that it is more important to be able to correctly predict high-risk loans as not doing so poses a danger to lenders.
-
-Here are the concluding recommendations:
-
-Use Model 2, where high-risk loans are over-represented for predicting loan status.
-If possible, feed the model with more training data on high-risk loans to improve accuracy.
-This model is good enough to run a pilot classifying project, where this model is the first step for predicting loan status. This way, the model can be evaluated with real time data, and improved upon as needed.
-In this model, we used logistic regression, but it may be worthwhile to try other supervised learning models like Random Forest, KNN or Tensor Flow, to see if they yield better results.
+Overall, both models worked quite well with accuracy scores above 90%. However, Model 2 had a higher balanced accuracy score of 99.6% as compared to 94.4% of Model 1. Thus, Model 2 is a better classifier of loan status.
